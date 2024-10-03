@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.switchDark{
+    display: block;
+}
+.switchLight{
+    display: none;
+}
+.themeIcon{
+    @apply cursor-pointer p-5 border-2 rounded-full
+}
+
+#con-card{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.icons{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.icons:hover{
+    background-color: hsl(198, 60%, 50%);
+}
